@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class ReplacingSpacesDemo {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter the String: ");
+		
+		String s = scan.nextLine();
+		
+		ReplacingSpaces rs = new ReplacingSpaces();
+		
+		System.out.println( rs.replacingSpaces(s));
+		scan.close();
+
+	}
+
+}
