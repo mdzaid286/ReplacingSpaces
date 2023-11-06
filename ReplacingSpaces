@@ -1,0 +1,21 @@
+
+public class ReplacingSpaces {
+	
+	public String replacingSpaces(String s) {
+		
+		String[] srr = s.split(" ");
+		
+		StringBuffer sb = new StringBuffer();
+		
+		for(int i = 0;i<srr.length;i++) {
+			if(i==0) {
+			sb.append(srr[i]);
+			}else {
+				sb.append("99"+srr[i]);
+			}
+		}
+		
+		return new String(sb);
+	}
+
+}
